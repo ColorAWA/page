@@ -1,2 +1,2 @@
-# yrnene.github.io
+# yrnene.github.io/page
 YRneneの主页
