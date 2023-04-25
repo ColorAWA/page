@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>我的个人信息</title>
+    <title>我的个人主页 - 个人信息</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -10,34 +10,49 @@
         padding: 0;
       }
 
-      h1 {
-        color: #333;
-        font-size: 36px;
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
         text-align: center;
-        margin-top: 50px;
+      }
+
+      h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 36px;
+        margin: 0;
+        margin-top: 20px;
       }
 
       p {
         color: #666;
         font-size: 18px;
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: justify;
         margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 50px;
       }
 
-      li {
-        color: #333;
-        font-size: 20px;
-        margin: 10px 0;
+      table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #333;
+        color: #fff;
       }
 
       nav ul {
@@ -59,33 +74,45 @@
         font-size: 20px;
         padding: 10px;
         border: 2px solid #333;
-    border-radius: 20px;
-    transition: all 0.3s ease-in-out;
-  }
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+      }
 
-  nav ul li a:hover {
-    background-color: #333;
-    color: #fff;
-  }
-</style>
-</head>
-<body>
-  <h1>我的个人信息</h1>
-  <ul>
-    <li><strong>姓名：</strong>张三</li>
-    <li><strong>年龄：</strong>25</li>
-    <li><strong>性别：</strong>男</li>
-    <li><strong>职业：</strong>软件工程师</li>
-    <li><strong>联系方式：</strong>zhangsan@example.com</li>
-  </ul>
-  <nav>
-    <ul>
-      <li><a href="index.html">返回主界面</a></li>
-      <p></p>
-      <li><a href="hobbies.html">兴趣爱好</a></li>
-      <p></p>
-      <li><a href="favorites.html">收藏内容</a></li>
-    </ul>
-  </nav>
-</body>
+      nav ul li a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>欢迎来到我的个人主页</h1>
+      <h2>个人信息</h2>
+    </header>
+    <table>
+      <tr>
+        <th>姓名</th>
+        <td>张三</td>
+      </tr>
+      <tr>
+        <th>年龄</th>
+        <td>30岁</td>
+      </tr>
+      <tr>
+        <th>职业</th>
+        <td>Web开发者</td>
+      </tr>
+      <tr>
+        <th>邮箱</th>
+        <td>zhangsan@example.com</td>
+      </tr>
+    </table>
+    <nav>
+      <ul>
+        <li><a href="index.html">主界面</a></li>
+        <li><a href="interests.html">兴趣爱好</a></li>
+        <li><a href="favorites.html">收藏内容</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
