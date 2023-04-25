@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>我的个人主页</title>
+    <title>我的收藏内容</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -22,6 +22,32 @@
         font-size: 18px;
         text-align: center;
         margin-top: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      li {
+        color: #333;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: 2px solid #333;
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+      }
+
+      li:hover {
+        transform: translateY(-10px);
       }
 
       nav ul {
@@ -54,13 +80,19 @@
     </style>
   </head>
   <body>
-    <h1>欢迎来到我的个人主页！</h1>
-    <p>在这里，您可以找到关于我个人信息、兴趣爱好以及我收藏的一些内容。</p>
+    <h1>我的收藏内容</h1>
+    <ul>
+      <li>《百年孤独》</li>
+      <li>Beethoven Symphony No.9</li>
+      <li>Yoga with Adriene</li>
+      <li>GitHub</li>
+      <li>CSS-Tricks</li>
+    </ul>
     <nav>
       <ul>
+        <li><a href="index.html">返回主界面</a></li>
         <li><a href="personal-info.html">个人信息</a></li>
         <li><a href="hobbies.html">兴趣爱好</a></li>
-        <li><a href="favorites.html">收藏内容</a></li>
       </ul>
     </nav>
   </body>

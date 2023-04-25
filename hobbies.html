@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>我的个人主页</title>
+    <title>我的兴趣爱好</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -22,6 +22,22 @@
         font-size: 18px;
         text-align: center;
         margin-top: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      li {
+        color: #333;
+        font-size: 20px;
+        margin: 10px 0;
       }
 
       nav ul {
@@ -54,14 +70,19 @@
     </style>
   </head>
   <body>
-    <h1>欢迎来到我的个人主页！</h1>
-    <p>在这里，您可以找到关于我个人信息、兴趣爱好以及我收藏的一些内容。</p>
+    <h1>我的兴趣爱好</h1>
+    <ul>
+      <li>阅读经典文学</li>
+      <li>听古典音乐</li>
+      <li>练习瑜伽</li>
+    </ul>
     <nav>
       <ul>
+        <li><a href="index.html">返回主界面</a></li>
         <li><a href="personal-info.html">个人信息</a></li>
-        <li><a href="hobbies.html">兴趣爱好</a></li>
         <li><a href="favorites.html">收藏内容</a></li>
-      </ul>
+    </ul>
     </nav>
-  </body>
-</html>
+    
+      </body>
+    </html>
