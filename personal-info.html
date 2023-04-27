@@ -82,6 +82,45 @@
         background-color: #333;
         color: #fff;
       }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      nav {
+        background-color: #666;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      nav a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0 10px;
+        transition: all 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #fff;
+        color: #333;
+        border: 2px solid #333;
+      }
     </style>
   </head>
   <body>
@@ -89,6 +128,17 @@
       <h1>欢迎来到我的个人主页</h1>
       <h2>个人信息</h2>
     </header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">主界面</a></li>
+          <li><a href="personal-info.html">个人信息</a></li>
+          <li><a href="hobbies.html">兴趣爱好</a></li>
+          <li><a href="favorites.html">收藏内容</a></li>
+          <li><a href="404.html">404页面</a></li>
+        </ul>
+      </div>
+    </nav>
     <table>
       <tr>
         <th>姓名</th>
@@ -107,12 +157,5 @@
         <td>YRnene2022@outlook.com</td>
       </tr>
     </table>
-    <nav>
-      <ul>
-        <li><a href="index.html">主界面</a></li>
-        <li><a href="interests.html">兴趣爱好</a></li>
-        <li><a href="favorites.html">收藏内容</a></li>
-      </ul>
-    </nav>
   </body>
 </html>
