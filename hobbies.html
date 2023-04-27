@@ -80,32 +80,38 @@
         margin-top: 10px;
       }
 
+      nav {
+        background-color: #666;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
       nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
       }
 
-      nav ul li {
+      nav li {
+        display: inline-block;
         margin: 0 10px;
       }
 
-      nav ul li a {
-        color: #333;
+      nav a {
+        display: block;
+        color: #fff;
         text-decoration: none;
-        font-size: 20px;
-        padding: 10px;
-        border: 2px solid #333;
-        border-radius: 20px;
-        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+        padding: 0 10px;
+        transition: all 0.3s ease;
       }
 
-      nav ul li a:hover {
-        background-color: #333;
-        color: #fff;
+      nav a:hover {
+        background-color: #fff;
+        color: #333;
+        border: 2px solid #333;
       }
     </style>
   </head>
