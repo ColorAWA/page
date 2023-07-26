@@ -3,6 +3,11 @@
   <head>
     <title>我的个人主页 - 个人信息</title>
     <link rel="shortcut icon" href="favicon.png">
+    <script>
+      if (window.location.protocol !== 'https:') {
+  window.location = window.location.href.replace(/^http/, 'https')
+}
+    </script>
     <style>
       body {
         font-family: Arial, sans-serif;
